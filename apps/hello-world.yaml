@@ -18,7 +18,7 @@ spec:
         name: hello-world
         ports:
         - containerPort: 80
-        command: ["bash"]
+        command: ["sh"]
         args:
           [
             "-c",
