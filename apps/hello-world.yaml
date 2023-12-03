@@ -14,7 +14,7 @@ spec:
         app: hello-world
     spec:
       containers:
-        - image: localhost:5000/alpine
+      - image: localhost:5000/alpine
         name: hello-world
         ports:
         - containerPort: 80
