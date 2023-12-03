@@ -23,7 +23,7 @@ spec:
         - -c
         - |
           while true;
-          do printf 'hello world '
+          do printf 'hello world 2 '
           date
           sleep 3
           done
