@@ -14,16 +14,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: alpine:latest
+        - image: localhost:5000/alpine
         name: hello-world
         ports:
         - containerPort: 80
-        command: 
-        - /bin/sh
-        - -c
-        - |
-          while true;
-          do printf 'hello world 2 '
-          date
-          sleep 3
-          done
