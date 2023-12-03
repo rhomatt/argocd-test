@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - image: alpine-latest
+        name: hello-world
+        ports:
+        - containerPort: 80
+        command: ["bash"]
+        args:
+          [
+            "-c",
+            "while true",
+            "do printf 'hello world '",
+            "date",
+            "sleep 3",
+            "done",
+          ]
