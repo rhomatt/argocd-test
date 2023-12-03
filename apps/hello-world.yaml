@@ -22,9 +22,13 @@ spec:
         args:
           [
             "-c",
-            "while true",
-            "do printf 'hello world '",
+            "while",
+            "true",
+            "do",
+            "printf",
+            "hello world ",
             "date",
-            "sleep 3",
+            "sleep",
+            "3",
             "done",
           ]
