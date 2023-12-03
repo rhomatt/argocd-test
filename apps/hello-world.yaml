@@ -18,17 +18,12 @@ spec:
         name: hello-world
         ports:
         - containerPort: 80
-        command: ["sh"]
-        args:
-          [
-            "-c",
-            "while",
-            "true",
-            "do",
-            "printf",
-            "hello world ",
-            "date",
-            "sleep",
-            "3",
-            "done",
-          ]
+        command: 
+        - /bin/sh
+        - -c
+        - |
+          while true;
+          do printf 'hello world '
+          date
+          sleep 3
+          done
