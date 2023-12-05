@@ -2,7 +2,7 @@
 
 cd $(dirname $0)
 
-docker rmi -f registry:2
+docker rm -f registry
 docker run -d -p 5000:5000 --name registry registry:2
 
 cd ../images/
