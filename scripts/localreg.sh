@@ -2,6 +2,11 @@
 
 cd $(dirname $0)
 
+rc-status | grep docker.*started || {
+	sudo rc-service docker start
+	echo waiting...
+	sleep 5
+}
 docker rm -f registry
 docker run -d -p 5000:5000 --name registry registry:2
 
