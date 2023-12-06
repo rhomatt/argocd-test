@@ -18,3 +18,12 @@ spec:
         name: hello-world
         ports:
         - containerPort: 80
+        command:
+        - /bin/sh
+        - -c
+        - |
+          while true;
+          do printf 'hello world '
+          date
+          sleep 3
+          done
