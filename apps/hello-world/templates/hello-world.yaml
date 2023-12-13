@@ -23,7 +23,7 @@ spec:
         - -c
         - |
           while true;
-          do printf 'hello world '
+          do printf 'hello world from argocd '
           date
           sleep 3
           done
