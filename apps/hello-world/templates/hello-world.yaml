@@ -23,7 +23,7 @@ spec:
         - -c
         - |
           while true;
-          do printf 'hello world from argocd2 '
+          do printf 'hello world from flux '
           date
           sleep 3
           done
